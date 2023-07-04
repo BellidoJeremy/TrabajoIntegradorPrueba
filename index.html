@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntados - Tecsup</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/carrousel.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="menu" container>
+            <img class="menu__logo" src="img/logo.png" alt="">
+            <input type="checkbox" id="menu" />
+            <label for="menu" onclick="toggleMenu()">
+              <img src="svg/menu.svg" class="menu-icon" alt="" id="menuIcon">
+              <img src="svg/aspa.svg" alt="" class="close-icon" id="closeIcon">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><i class='bx bxs-user-plus bx-md'></i><a href="index.html">Inicio</a></li>
+                    </ul>
+                    <ul>
+                        <li><i class="bx bx-support bx-md"></i><a href="contactar.html">Soporte</a></li>
+                    </ul>
+                    <ul>
+                        <li><i class="bx bx-group bx-md"></i><a href="acerca.html">Acerca de nosotros</a></li>
+                    </ul>
+                    <ul>
+                        <li><i class="bx bx-joystick bx-md"></i><a href="jugar.html">Como jugar</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <script src="js/header.js"></script>
+
+        <div class="carousel">
+            <div class="carousel_inner">
+                <div class="carousel_item carousel_item__active">
+                    <img src="img/portada1.jpg" alt="" class="carousel_img">
+                    <div class="carousel_caption">
+                        <h2 class="carousel_title">PREGUNTADOS TECSUP</h2>
+                        <h3 class="carousel_description">Te damos la bienvenida al universo de trivias multiplataforma número uno en el mundo. ¡Recórrelo y diviértete junto a Willy y todos los personajes!</h3>
+                        <div class="carousel__qr">
+                            <h4 class="carousel__qr__h4">Escanea el código para empezar a jugar</h4>
+                            <img src="img/qr.png" alt="" class="carousel__qr__img" ">
+                        </div>
+                        <div class="portada__image ">
+                            <img src="img/logo.png " alt=" " class="carousel_img_caption ">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel_item ">
+                    <div class="carousel_img--background ">
+                        <div class="carousel_caption ">
+                        <h2 class="carousel_title ">PREGUNTADOS TECSUP</h2>
+                        <h3 class="carousel_description ">¡Lanzamos Preguntados - El juego de mesa! Es trivia con un twist, con una dinámica que potenciará el ingenio y creatividad de familias o amigos. ¡Pon a prueba tu conocimiento!</h3>
+                        <div class="carousel__qr ">
+                            <h4 class="carousel__qr__h4 ">Escanea el código para empezar a jugar</h4>
+                            <img src="img/qr.png " alt=" " class="carousel__qr__img " ">
+                        </div>
+                        <div class="portada__image2 ">
+                            <img src="img/preguntados.jpg " alt=" " class="carousel_img_table ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel_indicator ">
+            <button class="carousel_dot carousel_dot__active "></button>
+            <button class="carousel_dot "></button>
+        </div>
+
+        <div class="carousel_control ">
+            <button class="carousel_button carousel_button__prev ">
+                <i class="fas fa-chevron-left "></i>
+             </button>
+            <button class="carousel_button carousel_button__next ">
+                <i class="fas fa-chevron-right "></i>
+             </button>
+        </div>
+        </div>
+    </header>
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js "></script>
+    <script src="js/script.js "></script>
+
+    <section id="new-List ">
+        <div class="title__list ">
+            <h3 class="title--secondary ">Noticias</h3>
+            <h2 class="title--primary ">Preguntados</h2>
+        </div>
+        <div class="img__list ">
+            <img class="img__noticias " src="img/noticias1.jpg " alt=" ">
+        </div>
+
+
+        <article class="article--noticias ">
+            <div class="article--noticias--row ">
+                <div class="article--noticias-row-txt ">
+                    <div class="date ">
+                        <span>
+                    <time datetime="2023-04-11 ">5 Abril 2023</time>
+                </span>
+                    </div>
+                    <h2 class="news-title--primary ">Preguntados 10° Aniversario</h2>
+                    <a href="https://elcomercio.pe/tecnologia/e-sports/el-juego-preguntados-cumple-10-anos-y-supera-las-50-millones-de-preguntas-en-34-idiomas-videojuegos-espana-mexico-estados-unidos-noticia/ ">
+                        <span class="boxed--article ">Seguir Leyendo</span>
+                    </a>
+                </div>
+                <img class="article--img " src="img/noticias.jpg ">
+            </div>
+        </article>
+
+    </section>
+
+
+    <section>
+        <div class="section__body ">
+            <h2 class="section--body--title ">PREGUNTADOS</h2>
+            <h3 class="section--body--description ">!Todos los días son una oportunidad para que las personas aprendan algo nuevo!</h3>
+            <img src="img/personajes.png " alt=" " class="section--body--img ">
+
+            <a class="button--sesions" href="php/login.php">
+                <button class="Button__sesión ">Iniciar sesión</button>
+            </a>
+            <a class="button--sesions" href="php/register.php">
+                <button class="Button__sesión">Registrarse</button>
+            </a>
+
+        </div>
+    </section>
+
+    <footer class=" footer__container ">
+        <div class="footer__content ">
+        </div>
+        <div class="footer__websites ">
+            <div class="footer__websites__content ">
+                <div class="footer__navSection ">
+                    <span class="footer__nav-title-text "><img src="svg/facebook.svg " alt=" " class="social--svg ">
+                    <span class="footer_nav-title-label ">FACEBOOK</span>
+                    </span>
+                </div>
+                <div class="footer__navSection ">
+                    <span class="footer__nav-title-text "><img src="svg/instagram.svg " alt=" "  class="social--svg ">
+                    <span class="footer_nav-title-label ">INSTAGRAM</span>
+                    </span>
+                </div>
+
+                <div class="footer__navSection ">
+                    <span class="footer__nav-title-text "><img src="svg/tiktok.svg " alt=" "  class="social--svg ">
+                    <span class="footer_nav-title-label ">TIKTOK</span>
+                    </span>
+                </div>
+                <div class="footer__navSection ">
+                    <span class="footer__nav-title-text "><img src="svg/twitter.svg " alt=" "  class="social--svg ">
+                    <span class="footer_nav-title-label ">TWITTER</span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__copyright ">
+            <p>©2021- 2023</p>
+            <h2>Tecsup</h2>
+            <p>- Todos los Derechos Reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(mikado.ttf);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.menu {
+    position: relative;
+    background: #181818;
+    display: flex;
+    z-index: 1000;
+    justify-content: space-between;
+    height: 5.90rem;
+    padding: 14px 20px 18px 20px;
+    align-items: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #181818;
+    display: none;
+}
+
+.menu .navbar ul li {
+    width: 100%;
+}
+
+.menu .navbar ul li i {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    margin-left: 1.25rem;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    font-family: myFont;
+}
+
+.menu .navbar ul li a:hover {
+    color: #242f9b;
+}
+
+.menu__logo {
+    height: 4rem;
+}
+
+.menu .navbar {
+    width: 18%;
+}
+
+.menu label {
+    cursor: pointer;
+    display: initial;
+    position: relative;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    display: flex;
+    border: 1px solid red;
+}
+
+.menu .navbar ul {
+    width: 100%;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 40px;
+}
+
+.close-icon {
+    width: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-icon.hide {
+    opacity: 0;
+}
+
+.close-icon.show {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#menu:checked~.navbar {
+    display: block;
+}
+
+.menu.open .navbar {
+    display: block;
+}
+
+.menu.open .menu-icon {
+    opacity: 0;
+}
+
+.menu.open .close-icon {
+    opacity: 1;
+}
+
+@media (max-width: 991px) {
+    .menu {
+        padding: 14px 10px 10px 10px;
+        height: 3.90rem;
+    }
+    .menu__logo {
+        height: 3rem;
+        padding: 0px 0px 10px 0px;
+    }
+    .menu .navbar {
+        width: 100%;
+    }
+}

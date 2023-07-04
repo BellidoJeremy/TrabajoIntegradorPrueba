@@ -1,0 +1,63 @@
+body {}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #0052D4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6FB1FC, #4364F7, #0052D4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6FB1FC, #4364F7, #0052D4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 500px;
+}
+
+.text--h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: myFont;
+}
+
+.text--p {
+    color: #fff;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#team-members li {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: myFont;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 370px;
+        padding: 30px;
+    }
+    .image-container img {
+        max-width: 300px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}

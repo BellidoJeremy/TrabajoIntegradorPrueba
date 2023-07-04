@@ -1,0 +1,240 @@
+@font-face {
+    font-family: myFont;
+    src: url(mikado.ttf);
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel_inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel_inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.carousel_item {
+    position: relative;
+    float: left;
+    display: none;
+    width: 100%;
+    margin-right: -100%;
+}
+
+
+/* slide effect */
+
+.carousel_item__active,
+.carousel_item__pos_prev,
+.carousel_item__pos_next {
+    display: block;
+}
+
+.carousel_item__pos_prev {
+    left: -100%;
+}
+
+.carousel_item__pos_next {
+    left: 100%;
+}
+
+.carousel_item__prev {
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+}
+
+.carousel_item__next {
+    transform: translateX(-100%);
+    transition: transform .5s ease-in-out;
+}
+
+
+/* fade effect */
+
+.carousel__fade .carousel_item__pos_prev,
+.carousel__fade .carousel_item__pos_next {
+    left: 0;
+    opacity: 0;
+}
+
+
+/* carousel */
+
+.carousel_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: 800px;
+}
+
+.carousel_img--background {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(84, 68, 135, 1) 35%, rgba(0, 121, 255, 1) 100%);
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: 800px;
+}
+
+.carousel_caption {
+    margin-left: 9.5rem;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 3rem 4rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.carousel_title {
+    font-family: myFont;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 3rem;
+    letter-spacing: 1.50px;
+    margin-bottom: 1rem;
+}
+
+.carousel_description {
+    letter-spacing: 1.90px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    width: 750px;
+}
+
+.carousel_indicator {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    z-index: 1;
+}
+
+.carousel_dot {
+    background-color: #D3D2D2;
+    border: none;
+    border-radius: 0%;
+    width: 70px;
+    height: 3px;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+
+.carousel_dot__active {
+    background-color: #19282F;
+}
+
+.carousel_control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel_button {
+    display: block;
+    padding-inline: 1rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.375rem;
+    background-color: transparent;
+    color: #ECF2FF;
+    border: none;
+    cursor: pointer;
+    transition: color .25s;
+    z-index: 1;
+}
+
+.carousel_button:hover {
+    color: #393E46;
+}
+
+.portada__image {
+    margin-left: 65rem;
+    position: absolute;
+}
+
+.portada__image2 {
+    margin-left: 58rem;
+    position: absolute;
+}
+
+.carousel_img_caption {
+    width: 500px;
+}
+
+.carousel_img_table {
+    width: 700px;
+}
+
+.carousel__qr {
+    border-radius: 1rem;
+    margin-top: 6rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #0B2447;
+    width: 570px;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel__qr__h4 {
+    font-size: 1.5rem;
+}
+
+.carousel__qr__img {
+    padding-top: 1rem;
+}
+
+@media(max-width: 991px) {
+    .carousel_title {
+        font-size: 2.3rem;
+    }
+    .carousel_description {
+        font-size: 0.80rem;
+        width: 330px;
+    }
+    .carousel_caption {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+    .carousel__qr {
+        margin-top: 12rem;
+        width: 330px;
+    }
+    .portada__image {
+        margin-left: 0rem;
+        margin-bottom: 6rem;
+    }
+    .carousel_img_caption {
+        width: 155px;
+    }
+    .portada__image2 {
+        margin-left: 0rem;
+        margin-bottom: 6rem;
+        margin-top: 1.5rem;
+    }
+    .carousel_img_table {
+        width: 170px;
+    }
+}

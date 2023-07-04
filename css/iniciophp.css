@@ -1,0 +1,10 @@
+@font-face {
+    font-family: myFont;
+    src: url(mikado.ttf);
+}
+
+.span--user {
+    color: #fff;
+    font-family: myFont;
+    font-size: 28px;
+}
